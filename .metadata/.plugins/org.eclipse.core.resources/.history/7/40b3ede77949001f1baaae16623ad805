@@ -1,0 +1,30 @@
+package com.basicsquestions;
+
+import java.util.Scanner;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		//Arthematic operator
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers");
+		int n1= sc.nextInt();
+		int n2=sc.nextInt();
+		int sum=n1+n2;
+		System.out.println("Sum :"+sum);
+		//unary operator
+		int u=20;
+		u=-u;
+		System.out.println("unary operator: "+u);
+		//assignment operator
+		int num;
+		String name;
+		num =34;
+		name="jeelan";
+		System.out.println(num+" .."+name);
+		int s=u+=num;
+		System.out.println("Assignment operator"+s);
+		
+	}
+
+}

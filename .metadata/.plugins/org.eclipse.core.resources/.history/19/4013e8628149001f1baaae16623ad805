@@ -1,0 +1,49 @@
+package com.basicsquestions;
+
+import java.util.Scanner;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		//Arthematic operator
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers");
+		int n1= sc.nextInt();
+		int n2=sc.nextInt();
+		int sum=n1+n2;
+		System.out.println("Sum :"+sum);
+		//unary operator
+		int u=20;
+		u=-u;
+		System.out.println("unary operator: "+u);
+		//assignment operator
+		int num;
+		String name;
+		num =34;
+		name="jeelan";
+		System.out.println(num+" .."+name);
+		int s=u+=num;
+		System.out.println("Assignment operator"+s);
+		//Relational operator 
+		System.out.println("Realtional operator "+(s==num));
+		//ternary operator
+		int a=50;
+		int b=30;
+		int c=a>b?a:b;
+		System.out.println("Ternary operator :"+c);
+		//logical operator 
+		if(a>b&&a>c)
+			System.out.println("A is the big");
+		else 
+			System.out.println("a is not big");
+		//bitwise operator 
+		System.out.println("or operator"+(a|b)+" and operator"+(a&b)+" xor operator "+(a^b)+" not operator"+(~a));
+		//shift operator 
+		//signed right shift 
+		int sign=64;
+		System.out.println("signed left shift "+(sign<<2));
+		System.out.println("signed right shift "+(sign>>2));
+		System.out.println("unsigned right shift "+(sign>>>2));
+	}
+
+}

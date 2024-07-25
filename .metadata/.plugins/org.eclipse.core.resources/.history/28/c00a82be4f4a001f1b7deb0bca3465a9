@@ -1,0 +1,46 @@
+package com.basicsquestions;
+
+public class PerfectNumberProgram {
+	public static boolean perfect(int n)
+	{
+		int sum=0;
+		for(int i=0;i<n;i++)
+		{
+			if(i%2==0)
+			{
+				sum+=i;
+			}
+		}
+		if(sum==n)return true ;
+		else return false;
+	}
+	//range
+	public static void range(int n,int m)
+	{
+		int sum=0;
+		for(int i=n;i<=m;i++)
+		{
+			sum=0;
+			for(int j=1;j<i;j++)
+			{
+				if(j%2==0)
+				{
+					sum+=j;
+				}
+			}
+			if(sum==i)
+			{
+				System.out.println(sum);
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		//1+2+3=6
+//		if(perfect(6))System.out.println("perfect number");
+//		else System.out.println("not perfect number");
+		range(1,100000);
+		
+	}
+
+}

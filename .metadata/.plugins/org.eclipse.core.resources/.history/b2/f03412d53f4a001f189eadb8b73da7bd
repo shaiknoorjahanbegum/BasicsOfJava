@@ -1,0 +1,43 @@
+package com.basicsquestions;
+
+public class PalindromeNumber {
+	//palindrome
+	public static String palindrome(int n)
+	{
+		int rev=0;int temp=n;
+		while(n>0)
+		{
+			rev=rev*10+n%10;
+			n/=10;
+		}
+		if(temp==rev)
+			return "palindrome number";
+		else 
+			return "not palindrome number";
+		
+	}
+	//palindrome range 
+	public static void palindromeRange(int n)
+	{
+		int rev=0;
+		for(int i=101;i<=n;i++)
+		{
+			int temp=i;rev=0;
+			while(i>0)
+			{
+				rev=rev*10+i%10;
+				i/=10;
+			}
+			if(temp==rev)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	public static void main(String[] args) {
+		//System.out.println(palindrome(121));
+		palindromeRange(1000);
+		
+	}
+
+}

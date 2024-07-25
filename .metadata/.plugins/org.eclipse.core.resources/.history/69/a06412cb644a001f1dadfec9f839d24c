@@ -1,0 +1,27 @@
+package com.basicsOOPs;
+class Method
+{
+	public void m1()
+	{
+		System.out.println("i am the m1 method");
+	}
+	public void m1(int n)
+	{
+		System.out.println("i am m1 method of one argumnet "+n);
+	}
+	public void m1(int n , int m)
+	{
+		System.out.println("i am m1 method of two arguments "+n+"...<<<>>>"+m);
+	}
+}
+
+public class MethodOverloading {
+
+	public static void main(String[] args) {
+		Method m = new Method();
+		m.m1();
+		m.m1(4);
+		m.m1(2, 6);
+	}
+
+}

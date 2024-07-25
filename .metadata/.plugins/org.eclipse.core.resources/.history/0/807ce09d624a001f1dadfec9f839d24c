@@ -1,0 +1,16 @@
+package com.basicsOOPs;
+
+public class TypeCastingExample {
+	//1.primitive typecasting ->1.widening 2.narrowing
+	//non primitive type casting -> upcasting 2.downcasting
+	public static void widerning()
+	{
+		byte a=10;
+		int b=a;
+		System.out.println(b);// converting lower range to higher range 
+		char c='a';
+		int d=c;
+		System.out.println(d);
+	}
+
+}

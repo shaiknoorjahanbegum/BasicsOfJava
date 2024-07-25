@@ -1,0 +1,38 @@
+package com.basicsquestions;
+
+import java.util.Scanner;
+
+public class BiggestNumber {
+	//biggest of two number 
+	public static String big(int a,int b)
+	{
+		if(a>b)
+			return "a is biggest";
+		else
+			return "b is biggest";
+	}
+	//biggets of three number
+	public static String big(int a,int b,int c)
+	{
+		if(a>b&&a>c)
+			return "a is biggest";
+		else if(b>a&&b>c)
+			return "b is biggest";
+		else 
+			return "c is the biggest";
+	}
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers :");
+		int n = sc.nextInt();
+		int m=sc.nextInt();
+		BiggestNumber b= new BiggestNumber();
+		System.out.println(b.big(n, m));
+		System.out.println(b.big(m, n, 98));
+		
+
+	}
+
+}

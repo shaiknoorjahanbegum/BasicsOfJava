@@ -1,0 +1,39 @@
+package com.basicsquestions;
+
+public class DecimalToBinary {
+	public static void decToBin(int dec,int bin)
+	{
+		int i=1;
+		while(dec>0)
+		{
+			bin = bin+dec%2*i;
+			i*=10;
+			dec/=2;
+		}
+		System.out.println(bin);
+	}
+	//in range 
+	public static void decToBinRange(int n,int m)
+	{
+		for(int i=n;i<=m;i++)
+		{
+			int j=1;int bin=0;
+			while(i>0)
+			{
+				bin=bin+(i%2)*j;
+				j*=10;
+				i/=2;
+			}
+			System.out.println(bin);
+		}
+	}
+	public static void main(String[] args) {
+		// n= 5 output =101
+//		decToBin(11,0);
+		decToBinRange(1,10);
+		
+		
+		
+	}
+
+}

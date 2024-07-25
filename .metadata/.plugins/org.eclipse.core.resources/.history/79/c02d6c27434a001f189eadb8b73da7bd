@@ -1,0 +1,53 @@
+package com.basicsquestions;
+
+public class LCMNumber {
+	public static int lcm(int a,int b)
+	{
+		int res=a>b?a:b;
+		while(true)
+		{
+			if(res%a==0&&res%b==0)
+			{
+				break;
+			}
+			res++;
+		}
+		return res;
+	}
+	public static int gcd(int a,int b)
+	{
+		int res=1;
+		while(true)
+		{
+			if(a%res==0&&b%res==0)
+			{
+				break;
+			}
+			res++;
+		}
+		return res;
+	}
+	//common of four 
+	public static void commonLcm(int a,int b)
+	{
+		int res=a>b?a:b;int count=0;
+		while(true)
+		{
+			if(res%a==0&&res%b==0)
+			{
+				count++;
+				System.out.println(res);
+				if(count==4)
+				{
+					break;
+				}
+			}
+			res+=;
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println(gcd(6,8));
+		
+	}
+
+}

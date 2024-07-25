@@ -1,0 +1,100 @@
+package com.basicsquestions;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BiggestNumber {
+	//biggest of two number 
+	public static String big(int a,int b)
+	{
+		if(a>b)
+			return "a is biggest";
+		else
+			return "b is biggest";
+	}
+	//biggets of three number
+	public static String big(int a,int b,int c)
+	{
+		if(a>b&&a>c)
+			return "a is biggest";
+		else if(b>a&&b>c)
+			return "b is biggest";
+		else 
+			return "c is the biggest";
+	}
+	//biggest of two numbers using ternary operator 
+	public static void bigTernary(int a,int b)
+	{
+		int result = a>b?a:b;
+		System.out.println("The result :"+result);
+	}
+	//biggest number of three using ternay operator 
+	public static void biggestTernary(int a,int b,int c)
+	{
+		int result= (a>b?a:b)>c?(a>b?a:b):c;
+		System.out.println(result);
+	}
+	//largest number in an array
+	public static void largest(int[] arr,int largest)
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]>largest)
+				largest =arr[i];
+		}
+		System.out.println(largest);
+	}
+	//Largest number by using streams
+	public static void streamsLarge(int[] arr)
+	{
+		int large= Arrays.stream(arr).max().getAsInt();
+		System.out.println(large);
+	}
+	//by using sorting 
+	public static void sort(int[] arr)
+	{
+		for(int i=0;i<arr.length-1;i++)
+		{
+			for(int j=0;j<arr.length-1-i;j++)
+			{
+				if(arr[j]>arr[j+1])
+				{
+					int temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
+			}
+		}
+		System.out.println(arr[arr.length-1]);
+	}
+	//by using predefined function
+	public static void preDefined(int[] arr)
+	{
+		Arrays.sort(arr);
+		System.out.println(arr[arr.length-1]);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers :");
+//		int n = sc.nextInt();
+//		int m=sc.nextInt();
+		BiggestNumber b= new BiggestNumber();
+//		System.out.println(b.big(n, m));
+//		System.out.println(b.big(m, n, 98));
+//		b.bigTernary(n, m);
+//		b.biggestTernary(n, m, 34432);
+		int[] arr= new int[5];
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		
+		//b.largest(arr, arr[0]);
+		//b.sort(arr);
+		b.preDefined(arr);
+		
+		
+
+	}
+
+}

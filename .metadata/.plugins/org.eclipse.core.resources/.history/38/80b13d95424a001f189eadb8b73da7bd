@@ -1,0 +1,22 @@
+package com.basicsquestions;
+
+public class LCMNumber {
+	public static int lcm(int a,int b)
+	{
+		int res=a>b?a:b;
+		while(true)
+		{
+			if(res%a==0&&res%b==0)
+			{
+				break;
+			}
+			res=res+a;
+		}
+		return res;
+	}
+	public static void main(String[] args) {
+		System.out.println(lcm(6,8));
+		
+	}
+
+}

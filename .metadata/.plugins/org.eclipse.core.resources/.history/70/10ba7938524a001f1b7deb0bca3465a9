@@ -1,0 +1,9 @@
+package com.basicsquestions;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+
+	}
+
+}

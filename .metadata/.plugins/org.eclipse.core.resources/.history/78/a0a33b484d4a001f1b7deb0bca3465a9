@@ -1,0 +1,38 @@
+package com.basicsquestions;
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+	public static void fibonacci(int n)
+	{
+		int a=0,b=1,c;
+		for(int i=1;i<=n;i++)
+		{
+			c=a+b;
+			System.out.println(c);
+			a=b;b=c;
+		}
+		
+	}
+	//fibonacci series upto n 
+	public static void fibonacciUptoN(int n)
+	{
+		int a=0,b=1,c;
+		while(a<=n)
+		{
+			System.out.println(a);
+			c=a+b;
+			a=b;b=c;
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int n=sc.nextInt();
+		//fibonacci(n);
+		fibonacciUptoN(n);
+		
+	}
+
+}

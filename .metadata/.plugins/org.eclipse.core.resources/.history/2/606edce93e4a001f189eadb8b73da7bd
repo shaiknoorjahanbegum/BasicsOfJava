@@ -1,0 +1,24 @@
+package com.basicsquestions;
+
+public class PalindromeNumber {
+	//palindrome
+	public static String palindrome(int n)
+	{
+		int rev=0;int temp=n;
+		while(n>0)
+		{
+			rev=rev*10+n%10;
+			n/=10;
+		}
+		if(temp==rev)
+			return "palindrome number";
+		else 
+			return "not palindrome number";
+		
+	}
+	public static void main(String[] args) {
+		System.out.println(palindrome(121));
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.basicsOOPs;
+
+public class ObjectCalssesExcample {
+	int i;int j;
+	static int k;
+	public void display()
+	{
+		System.out.println(i+" "+j);
+	}
+	public static void main(String[] args) {
+		ObjectCalssesExcample example= new ObjectCalssesExcample();
+		example.i=10;
+		example.j=20;
+		example.k=23;
+		System.out.println(example.i+" "+example.j+" "+k);
+		
+	}
+
+}

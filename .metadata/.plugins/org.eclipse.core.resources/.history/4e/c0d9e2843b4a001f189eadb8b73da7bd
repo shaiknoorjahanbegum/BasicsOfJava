@@ -1,0 +1,61 @@
+package com.basicsquestions;
+
+import java.util.Scanner;
+
+public class ReverseNumber {
+	//reverse of number
+	public static int reverse(int n)
+	{
+		int rev=0;
+		while(n>0)
+		{
+			rev=rev*10+n%10;
+			n/=10;
+		}
+		return rev;
+	}
+	// sum of digit 
+	public static int sum(int n)
+	{
+		int sum=0;
+		while(n>0)
+		{
+			sum+=n%10;
+			n/=10;
+		}
+		return sum;
+	}
+	//sum of square of digit 
+	public static int sumSquare(int n)
+	{
+		int sum=0;
+		while(n>0)
+		{
+			sum+=(n%10)*(n%10);
+			n/=10;
+		}
+		return sum;
+	}
+	//sum of cube of digit 
+	public static int sumCube(int n)
+	{
+		int sum=0;
+		while(n>0)
+		{
+			sum+=(n%10)*(n%10)*(n%10);
+			n/=10;
+		}
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int n= sc.nextInt();
+		//System.out.println(reverse(n));
+		//System.out.println(sum(n));
+		//System.out.println(sumSquare(n));
+		System.out.println(sumCube(n));
+	}
+
+}
