@@ -1,0 +1,27 @@
+package com.basicsOOPs;
+
+class Parent 
+{
+	public void call()
+	{
+		System.out.println("i am the parent class method");
+	}
+}
+class Child extends Parent 
+{
+	@Override
+	public void call()
+	{
+		System.out.println(" i am the child class method ");
+	}
+}
+public class MethodOverriding {
+	//same method name with same signature 
+	public static void main(String[] args) {
+		Child c= new Child();
+		c.call();
+		
+
+	}
+
+}

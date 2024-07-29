@@ -1,0 +1,11 @@
+package com.basicsOOPs;
+
+public class WrapperClasses {
+public static void main(String[] args) {
+	//auto boxing
+	int a=34;
+	Integer o= new Integer(a);
+	System.out.println(a);
+	System.out.println(o);
+}
+}

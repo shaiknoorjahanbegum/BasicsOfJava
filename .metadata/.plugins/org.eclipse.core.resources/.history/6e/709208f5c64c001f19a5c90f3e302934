@@ -1,0 +1,21 @@
+package com.basicsOOPs;
+
+class CompileTimePolymorphism 
+{
+	static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+	static double Multiply(double a, double b)
+    {
+        return a * b;
+    }
+
+}
+
+public class PolymorphismExample {
+public static void main(String[] args) {
+	System.out.println(CompileTimePolymorphism.Multiply(3, 23));
+	System.out.println(CompileTimePolymorphism.Multiply(23.2, 242.2));
+}
+}

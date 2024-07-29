@@ -1,0 +1,36 @@
+package com.basicsOOPs;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileHandling {
+	public static void main(String[] args) throws IOException {
+		 File f = new File("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile.txt");
+		//System.out.println(f.mkdir()); creating new file
+		//System.out.println(f.createNewFile());
+//		 System.out.println(f.canExecute());
+//		 System.out.println(f.canRead());
+//		 System.out.println(f.canWrite());
+//		 File file = new File("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile1.txt");
+//		 System.out.println(f.renameTo(file));
+//		 System.out.println(f.getAbsolutePath());
+		 //second program
+//		 FileWriter file= new FileWriter("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile.txt");
+//		 file.write("hlo bts ");
+//		 System.out.println("executed");
+//		 file.close();
+		 
+		 FileWriter file = new FileWriter(f);
+		 if(f.canWrite())
+		 {
+			 file.write('n');
+		 }
+		 else
+		 {
+			 System.out.println("something is fishy");
+		 }
+		 file.close();
+	}
+
+}

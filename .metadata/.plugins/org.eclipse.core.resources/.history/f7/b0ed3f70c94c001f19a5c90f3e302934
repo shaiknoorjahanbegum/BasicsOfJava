@@ -1,0 +1,58 @@
+package com.basicsOOPs;
+class E1// call to super is used to call the constructor of immediate super class
+{
+	int i;
+	public E1(int i)
+	{
+		this.i=i;
+		System.out.println("i= "+i);
+	}
+	public void display()
+	{
+		System.out.println("i= "+i);
+	}
+}
+class F extends E1
+{
+	public F()
+	{
+		super(100);
+		System.out.println("F class constructor");
+	}
+}
+//second example
+class Human 
+{
+	String name;
+	public Human(String name)
+	{
+		this.name=name;
+	}
+}
+class Doctor extends Human
+{
+	String name;
+	int age;
+	String specialized;
+	public Doctor(String name ,int age,String specialized)
+	{
+		super(name);
+		this.name=name;
+		this.age=age;
+		this.specialized=specialized;
+	}
+	@Override
+	public String toString() {
+		return "Doctor [name=" + name + ", age=" + age + ", specialized=" + specialized + "]";
+	}
+	
+}
+
+public class CallToSuper {
+	public static void main(String[] args) {
+		F f =new F();
+		
+		Doctor d= new Doctor("noorjahan" ,23,"javadeveloper");
+	}
+
+}

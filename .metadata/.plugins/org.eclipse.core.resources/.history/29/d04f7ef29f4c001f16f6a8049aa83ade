@@ -1,0 +1,49 @@
+package com.basicsOOPs;
+
+import java.util.Scanner;
+
+//single level inheritance
+class Fact
+{
+	public long factorial(long num)
+	{
+		int fact=1;
+		for(int i=1;i<=num;i++)
+		{
+			fact*=i;
+		}
+		return fact;
+	}
+}
+class StrongNum extends Fact
+{
+	public long strong(long num)
+	{
+		long res=0;
+		for(;num>0;num/=10)
+		{
+			res+=factorial(num);
+		}
+		return res;
+	}
+}
+
+public class IntertitanceExample {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		long n = sc.nextInt();
+		StrongNum  s= new StrongNum();
+		long res= s.factorial(n);
+		if(n==res)
+		{
+			System.out.println("i am strong number ");
+		}
+		else 
+		{
+			System.out.println(" i am not a strong number ..");
+		}
+		
+	}
+
+}

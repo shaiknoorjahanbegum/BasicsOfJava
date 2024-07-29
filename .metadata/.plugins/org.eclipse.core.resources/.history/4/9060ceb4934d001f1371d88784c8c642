@@ -1,0 +1,42 @@
+package com.basicsOOPs;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileHandling {
+	public static void main(String[] args) throws IOException {
+		 File file = new File("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile.txt");
+		//System.out.println(f.mkdir()); creating new file
+		//System.out.println(f.createNewFile());
+//		 System.out.println(f.canExecute());
+//		 System.out.println(f.canRead());
+//		 System.out.println(f.canWrite());
+//		 File file = new File("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile1.txt");
+//		 System.out.println(f.renameTo(file));
+//		 System.out.println(f.getAbsolutePath());
+		 //second program
+//		 FileWriter file= new FileWriter("C:\\Users\\shaik noorjhan\\OneDrive\\Documents\\newfile.txt");
+//		 file.write("hlo bts ");
+//		 System.out.println("executed");
+//		 file.close();
+		 
+		 try (FileWriter fileWriter = new FileWriter(file)) {
+	            // Check if the file exists and is writable
+	            if (file.exists() && file.canWrite()) {
+	                // Write a character to the file
+	                fileWriter.write('n');
+	                // Optionally, flush the writer to ensure data is written out
+	                fileWriter.flush();
+	                System.out.println("Character written successfully.");
+	            } else {
+	                System.out.println("File does not exist or is not writable.");
+	            }
+	        } catch (IOException e) {
+	            // Handle possible IOException
+	            System.out.println("An error occurred while writing to the file.");
+	            e.printStackTrace();
+	        }
+	}
+
+}

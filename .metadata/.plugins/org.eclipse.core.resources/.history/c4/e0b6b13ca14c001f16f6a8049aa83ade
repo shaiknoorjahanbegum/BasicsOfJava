@@ -1,0 +1,12 @@
+package com.basicsOOPs;
+
+public class MethodOverriding {
+	//same method name with same signature 
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

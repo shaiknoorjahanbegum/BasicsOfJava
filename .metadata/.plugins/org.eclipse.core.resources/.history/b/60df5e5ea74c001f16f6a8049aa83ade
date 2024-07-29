@@ -1,0 +1,26 @@
+package com.basicsOOPs;
+class E1
+{
+	int i;
+	public E1(int i)
+	{
+		this.i=i;
+	}
+	public void display()
+	{
+		System.out.println("i= "+i);
+	}
+}
+class F extends E1
+{
+	public F()
+	{
+		super(100);
+		System.out.println("F class constructor");
+	}
+}
+
+public class CallToSuper {
+	F f =new F();
+
+}

@@ -1,0 +1,9 @@
+package com.basicsOOPs;
+
+public class FinalKeyword {
+	final static int k=392;
+	public static void main(String[] args) {
+		System.out.println(k);
+	}
+
+}

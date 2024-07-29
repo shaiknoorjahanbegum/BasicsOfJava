@@ -1,0 +1,7 @@
+package com.basicsOOPs;
+
+public class PolymorphismExample {
+public static void main(String[] args) {
+	
+}
+}

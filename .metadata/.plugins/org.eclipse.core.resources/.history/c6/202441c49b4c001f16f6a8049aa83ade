@@ -1,0 +1,109 @@
+package com.basicsOOPs;
+//communication between classes is know as assisation 
+//1.Aggregation 2.Composition
+class A // Aggregation :the dependency bwn the objects one obj exist without another object 
+{
+	public void m1()
+	{
+		System.out.println("class A logic of m1 method");
+	}
+	
+}
+class B
+{
+	public void m2()
+	{
+		A a1= new A();
+		a1.m1();
+	}
+	
+}
+class Factorial //aggregation
+{
+	public long factorial(long n)
+	{
+		int fact=1;
+		for(int i=1;i<=n;i++)
+		{
+			fact*=i;
+		}
+		return fact;
+	}
+}
+class Strong 
+{
+	public long strong(long n)
+	{
+		Factorial f= new Factorial();
+		long res=0;
+		for(;n>0;n/=10)res+=f.factorial(n%10);
+		return res;
+	}
+}
+
+//compostion : the dependency between the objects is must 
+class Car
+{
+	Enginee e;
+	String color;
+	String brand;
+	double price;
+	public Car(Enginee e,String color,String brand,double price)
+	{
+		this.e=e;
+		this.color=color;
+		this.brand=brand;
+		this.price=price;
+	}
+	public void carDetails()
+	{
+		System.out.println(e);
+		System.out.println(color);
+		System.out.println(brand);
+		System.out.println(price);
+	}
+	@Override
+	public String toString() {
+		return "Car [e=" + e + ", color=" + color + ", brand=" + brand + ", price=" + price + "]";
+	}
+	
+	
+	
+}
+class Enginee
+{
+	int number;
+	String brand;
+	public Enginee(int number , String brand)
+	{
+		this.number=number;
+		this.brand=brand;
+	}
+	public void engineeDetails()
+	{
+		System.out.println("Enginee number : "+number+" enginee brand : "+brand);
+	}
+	@Override
+	public String toString() {
+		return "Enginee [number=" + number + ", brand=" + brand + "]";
+	}
+	
+}
+
+public class AssosiationExample {
+public static void main(String[] args) {
+	B b = new B();
+	b.m2();
+	Strong s= new Strong();
+	long res= s.strong(145);
+	if(res==145)
+	{
+		System.out.println("I m a strong number");
+	}
+	else
+	{
+		System.out.println("not a strong number");
+	}
+	
+}
+}

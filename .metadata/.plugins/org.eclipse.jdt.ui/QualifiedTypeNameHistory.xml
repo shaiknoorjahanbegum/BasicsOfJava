@@ -6,9 +6,25 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.basicsquestions.PalindromeNumber"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.basicsOOPs.ObjectCalssesExcample"/>
     <fullyQualifiedTypeName name="com.basicsOOPs.ThisKeyWord"/>
     <fullyQualifiedTypeName name="com.basicsOOPs.Rectangle"/>
+    <fullyQualifiedTypeName name="com.basicsOOPs.StaticBloacksNonStaticBloacks"/>
+    <fullyQualifiedTypeName name="com.basicsOOPs.FinalKeyword"/>
+    <fullyQualifiedTypeName name="com.basicsOOPs.Airtel"/>
+    <fullyQualifiedTypeName name="com.basicsquestions.Color"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.basicsOOPs.Four"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.awt.Component.BaselineResizeBehavior"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 </qualifiedTypeNameHistroy>

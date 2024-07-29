@@ -1,0 +1,25 @@
+package com.basicsquestions;
+class Sum
+{
+	public static void sum(int i,int j)
+	{
+		if(i>j)return ;
+		System.out.println(i);
+	 sum(i+1,j);
+	}
+	public static int sumDigit(int n)
+	{
+		if(n==0) return 0;
+		return n%10+sumDigit(n/10);
+	}
+}
+
+
+public class RecursionExample {
+	public static void main(String[] args) {
+		Sum s= new Sum();
+		s.sum(1, 10);
+		System.out.println(s.sumDigit(123));
+	}
+
+}
